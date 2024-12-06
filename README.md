@@ -15,3 +15,5 @@ With the check enabled, you can hover over any sentence to see its readability s
 The "Readability" button in the status bar can also turn off/remove the readability check.
 
 You can set your target reading level with the Command Palette command "Set Readability Level".
+
+The Flesch Reading Ease score of this readme is 39.

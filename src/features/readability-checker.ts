@@ -189,7 +189,7 @@ export default class ReadabilityChecker {
     );
   }
 
-  public setSentencesFromText(text: string | undefined): void {
+  private setSentencesFromText(text: string | undefined): void {
     this.sentences = [];
     if (!text) {
       return;
@@ -214,7 +214,7 @@ export default class ReadabilityChecker {
     this.updateStatusBar();
   }
 
-  public checkAndHighlightText() {
+  private checkAndHighlightText() {
     this.getActiveEditor();
     this.setSentencesFromText(this.activeEditor?.document.getText());
 
@@ -233,7 +233,7 @@ export default class ReadabilityChecker {
     this.activeEditor?.setDecorations(highlighter, ranges);
   }
 
-  public removeTextHighlights() {
+  private removeTextHighlights() {
     this.activeEditor?.setDecorations(highlighter, []);
   }
 
