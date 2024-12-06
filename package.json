@@ -1,0 +1,63 @@
+{
+  "name": "readability-check",
+  "displayName": "Readability Check",
+  "description": "This extension identifies the reading level of of text in plaintext and markdown files.",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.95.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onLanguage:plaintext",
+    "onLanguage:markdown"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "commands": [
+      {
+        "command": "readability-check.checkLevel",
+        "title": "Check Readability Level"
+      },
+      {
+        "command": "readability-check.setReadabilityTarget",
+        "title": "Set Readability Level"
+      },
+      {
+        "command": "readability-check.acceptSuggestion",
+        "title": "Accept Suggestion"
+      },
+      {
+        "command": "readability-check.toggleCheck",
+        "title": "Toggle Readability Checker"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "pretest": "npm run compile && npm run lint",
+    "lint": "eslint src",
+    "test": "vscode-test"
+  },
+  "devDependencies": {
+    "@types/mocha": "^10.0.9",
+    "@types/node": "20.x",
+    "@types/vscode": "^1.95.0",
+    "@typescript-eslint/eslint-plugin": "^8.10.0",
+    "@typescript-eslint/parser": "^8.7.0",
+    "@vscode/test-cli": "^0.0.10",
+    "@vscode/test-electron": "^2.4.1",
+    "eslint": "^9.13.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.1",
+    "prettier": "^3.4.2",
+    "typescript": "^5.6.3"
+  },
+  "dependencies": {
+    "sentence-splitter": "^5.0.0",
+    "text-readability-ts": "^1.0.11"
+  }
+}
