@@ -2,14 +2,16 @@
 
 This is Stephanie's VS Code extension that makes use of the `text-readability` library.
 
-## Features
-
 This is an extension that helps you understand the readability of prose. When sentences are too complex given your target reading level, it also provides you with suggestions to simplify the text.
 
 It works on plaintext and markdown files.
 
-After loading the extension, you will see a "Readability" button on the left side of the status bar at the bottom of the screen. You can use this button to turn the readability check on and off. This button will also show you information about the readability level for the entire document.
+## Using the Extension
 
-When the extension has been toggled on, it will highlight sentences that are too complex for your target reading level. You can hover over the highlighted text to see the readability score and suggestions for simplifying the text.
+You can enable the readability check through the "Readability" button on the left side of the status bar at the bottom of the screen. Enabling the check will highlight sentences that are too complex for your target reading level. It will also provide you with an overall readability score for the entire document in the status bar.
+
+With the check enabled, you can hover over any sentence to see its readability score. You can also hover over highlighted text to see a suggestion for a simplified sentence that you can use to replace the more complex text. As you add additional sentences, the extension will automatically check the readability of the new text.
+
+The "Readability" button in the status bar can also turn off/remove the readability check.
 
 You can set your target reading level with the Command Palette command "Set Readability Level".
