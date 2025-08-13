@@ -17,3 +17,8 @@ The "Readability" button in the status bar can also turn off/remove the readabil
 You can set your target reading level with the Command Palette command "Set Readability Level".
 
 The Flesch Reading Ease score of this readme is 39.
+
+
+----
+### How to run this
+This extension is unpublished. To run locally from this repo, open src/extension.ts and press F5 or run the command Debug: Start Debugging from the Command Palette (Ctrl+Shift+P). This will compile and run the extension in a new Extension Development Host window.
